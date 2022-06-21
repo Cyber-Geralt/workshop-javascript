@@ -1,0 +1,29 @@
+#page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul {
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin: 5px;
+  }
+  
+  main ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 50px 0 0 0;
+  }
+  
