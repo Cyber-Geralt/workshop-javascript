@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIDEOS</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <template id="homepage">
+      <ul>
+        <li>
+          <section>
+            <img src="https://picsum.photos/id/123/200/200" alt="" />
+            <h3>Film 1</h3>
+            <small>Czas trwania: 140 minut</small>
+            <button>Zobacz</button>
+          </section>
+        </li>
+        <li>
+          <section>
+            <img src="https://picsum.photos/id/567/200/200" alt="" />
+            <h3>Film 1</h3>
+            <small>Czas trwania: 140 minut</small>
+            <button>Zobacz</button>
+          </section>
+        </li>
+        <li>
+          <section>
+            <img src="https://picsum.photos/id/345/200/200" alt="" />
+            <h3>Film 1</h3>
+            <small>Czas trwania: 140 minut</small>
+            <button>Zobacz</button>
+          </section>
+        </li>
+      </ul>
+    </template>
+
+    <template id="registration">
+      <form id="registrationForm">
+        <div>
+          <label>
+            E-mail:
+            <input type="text" placeholder="E-mail" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Hasło:
+            <input type="text" placeholder="Hasło" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Imię:
+            <input type="text" placeholder="Imię" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Nazwisko:
+            <input type="text" placeholder="Nazwisko" />
+          </label>
+        </div>
+        <button type="submit">Zarejestruj się</button>
+      </form>
+    </template>
+
+    <template id="login">
+      <form id="loginForm">
+        <div>
+          <label>
+            E-mail:
+            <input type="text" placeholder="E-mail" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Hasło:
+            <input type="text" placeholder="Hasło" />
+          </label>
+        </div>
+        <button type="submit">Zaloguj się</button>
+      </form>
+    </template>
+    
+    <template id="not-found">
+        <p>Ups... 404</p>
+    </template>
+
+    <div id="page">
+      <header>
+        <h1>
+            <a href="#/">YouTube</a>
+        </h1>
+        <p>Zobacz swoje ulubione filmy</p>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#/registration">Rejestracja</a>
+            </li>
+            <li>
+              <a href="#/login">Logowanie</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="outlet"></main>
+
+      <footer>
+        <p>Copyright 2022 &copy;</p>
+      </footer>
+    </div>
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
